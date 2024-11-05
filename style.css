@@ -234,18 +234,15 @@ header .hero-section .btn-1:hover::before {
     position: absolute;
     width: 304px;
     height: 304px;
-    border-top: 0.2rem solid #333;
-    border-bottom: 0.2rem solid #333;
+    border-top: 0.2rem solid var(--bg-color);
+    border-bottom: 0.2rem solid var(--bg-color);
     border-left: 0.2rem solid #44ff00;
     border-right: 0.2rem solid #33ff00;
     border-radius: 50%;
     margin: auto;
     transition: transform 2s linear;
     left: 11%;
-}
-
-.about .circle:hover {
-    transform: rotate(360deg);
+    animation: aboutSpinner 8s linear infinite;
 }
 
 /* right side  */
@@ -373,6 +370,131 @@ header .hero-section .btn-1:hover::before {
     padding-top: .5rem;
 }
 
+/* skills section design start  */
+
+.skills {
+    min-height: auto;
+    padding-bottom: 4rem;
+    background-color: var(--seceond-bg-color);
+
+
+}
+
+.skills .container h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.skills .container h2 span {
+    color: #04ff00;
+}
+
+.skills .container .skills_column {
+    flex: 1 1 30rem;
+}
+
+.skills .container .skills_column .skills_box .skills_content {
+    position: relative;
+    border: 2px solid #00a6ff;
+    border-radius: 10px;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.skills .container .skills_column .skills_box .skills_content::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.skills .container .skills_column .skills_box .skills_content:hover:before {
+    width: 100%;
+}
+
+.skills .container .skills_column .skills_box .skills_content .progres {
+    padding: 1rem 0;
+}
+
+.skills .container .skills_column .skills_box .skills_content .progres h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.skills .container .skills_column .skills_box .skills_content .progres i {
+    font-size: 50px;
+}
+
+.skills .container .skills_column .skills_box .skills_content .progres .bar {
+    height: 1.2rem;
+    padding: 3px;
+    border: .2rem solid #00a6ff;
+    border-radius: .6rem;
+    margin: 1rem 0;
+    z-index: 1;
+
+}
+
+.skills .container .skills_column .progres .bar span {
+    display: block;
+    background-color: #33ff00a2;
+    height: 100%;
+    border-radius: .3rem;
+
+}
+
+.skills .container .skills_column:nth-child(2) .progres:nth-child(1) h3 img {
+    border-radius: 50%;
+}
+
+
+
+.skills .container .skills_column:nth-child(1) .progres:nth-child(1) .bar span {
+    width: 95%;
+}
+
+
+.skills .container .skills_column:nth-child(1) .progres:nth-child(2) .bar span {
+    width: 95%;
+}
+
+
+.skills .container .skills_column:nth-child(1) .progres:nth-child(3) .bar span {
+    width: 90%;
+}
+
+
+.skills .container .skills_column:nth-child(1) .progres:nth-child(4) .bar span {
+    width: 80%;
+}
+
+
+.skills .container .skills_column:nth-child(2) .progres:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills .container .skills_column:nth-child(2) .progres:nth-child(2) .bar span {
+    width: 70%;
+}
+
+.skills .container .skills_column:nth-child(2) .progres:nth-child(3) .bar span {
+    width: 50%;
+}
+
+.skills .container .skills_column:nth-child(2) .progres:nth-child(4) .bar span {
+    width: 50%;
+}
+
 
 /* key frames  */
 
@@ -382,10 +504,10 @@ header .hero-section .btn-1:hover::before {
     100% { color: #1e90ff; }
 }
 
-/* @keyframes aboutSpinner {
+@keyframes aboutSpinner {
     0% { transform: rotate(0); }
     100% { transform: rotate(360deg); }
-} */
+}
 
 @keyframes gradientAnimation {
     0% { background-position: 0%; }
