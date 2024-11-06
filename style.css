@@ -22,6 +22,11 @@ body {
   --text-color: white;
   --button-gradient-start: #FF6F20;
     --button-gradient-end: #FFB400;  
+    --red-color: red;
+    --green-color: green;
+    --black-color: black;
+    --white-color: white;
+
 }
 
 ul,
@@ -33,6 +38,17 @@ a {
   text-decoration: none;
   padding: 0;
   margin: 0;
+}
+/* custom scrollbar  */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--red-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--red-color);
 }
 
 /* Header section design start ********************* */
@@ -213,7 +229,7 @@ header .hero-section .btn-1:hover::before {
     color: transparent;
     animation: gradientAnimation 5s ease infinite;
 }
-.about{
+.about .row .about-img{
     position: relative;
 }
 .about .row .about-img img{
@@ -225,26 +241,27 @@ header .hero-section .btn-1:hover::before {
     border: 10px solid transparent;
     animation: gradientAnimation 5s ease infinite; 
 }
-
+.about .hading h2{
+    margin-bottom: 50px;
+}
 .padding{
     padding-left: 70px;
 }
 
 .about .circle {
-    position: absolute;
-    width: 304px;
-    height: 304px;
-    border-top: 0.2rem solid var(--bg-color);
-    border-bottom: 0.2rem solid var(--bg-color);
-    border-left: 0.2rem solid #44ff00;
-    border-right: 0.2rem solid #33ff00;
-    border-radius: 50%;
-    margin: auto;
-    transition: transform 2s linear;
-    left: 11%;
-    animation: aboutSpinner 8s linear infinite;
+	position: absolute;
+	width: 295px;
+	height: 304px;
+	border-top: 0.2rem solid var(--bg-color);
+	border-bottom: 0.2rem solid var(--bg-color);
+	border-left: 0.2rem solid #44ff00;
+	border-right: 0.2rem solid #33ff00;
+	border-radius: 50%;
+	margin: auto;
+	transition: transform 2s linear;
+	left: 4px;
+	animation: aboutSpinner 8s linear infinite;
 }
-
 /* right side  */
 .about .btn-2 {
     display: inline-block;
@@ -261,6 +278,10 @@ header .hero-section .btn-1:hover::before {
     position: relative;
 }
 
+.about .btn-2:hover {
+    color: white;
+    transition: 1s;
+}
 .about .btn-2::before {
     content: '';
     position: absolute;
@@ -281,12 +302,18 @@ header .hero-section .btn-1:hover::before {
 
 /* Education section start  */
 .education {
-    margin: 50px 0;
+    margin: 70px 0;
+
 }
 
-.education .container h2 {
+.education .container .hading h2 {
     font-size: 40px;
+    font-weight: bold;
     text-align: center;
+    background: linear-gradient(90deg, #ff0000, #ff8c00, #ffd700, #32cd32, #1e90ff, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
     margin-bottom: 50px;
 }
 
@@ -381,10 +408,15 @@ header .hero-section .btn-1:hover::before {
 }
 
 .skills .container h2 {
-    text-align: center;
-    font-size: 40px;
     padding-top: 60px;
     padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0000, #ff8c00, #ffd700, #32cd32, #1e90ff, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
 }
 
 .skills .container h2 span {
@@ -493,6 +525,99 @@ header .hero-section .btn-1:hover::before {
 
 .skills .container .skills_column:nth-child(2) .progres:nth-child(4) .bar span {
     width: 50%;
+}
+
+/* latest project  */
+
+.latast-project {
+    margin: 40px 0;
+}
+
+.latast-project .container .hading h2 {
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0000, #ff8c00, #ffd700, #32cd32, #1e90ff, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.latast-project .container .hading h2 span {
+    color: #05f625;
+}
+
+
+.latast-project .container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.latast-project .container .item-1 {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.latast-project .container .item-1 img{
+    height: 210px;
+}
+
+/* testimonial section design start  */
+
+.testimonial-section{
+    background-color: #071952;
+    padding: 50px 0;
+    height: 35rem;
+}
+.testimonial-section h2{
+    color: var(--white-color);
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: #5A2189;
+    border-radius: 0.9375rem;
+ 
+}
+
+.testimonial-section .carousel-caption{
+    color: var(--white-color);
+}
+.testimonial-section .carousel-caption img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+padding: 0.3125rem;
+margin-bottom: 20px;
+}
+
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.5;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
 }
 
 
