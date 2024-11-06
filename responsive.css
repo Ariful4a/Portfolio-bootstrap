@@ -1,0 +1,146 @@
+@media (max-width: 767px) {
+    #navbarNav {
+        display: none;
+    }
+    #navbarNav.show {
+        display: block;
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    /* hero section  */
+    .hero-section {
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+    .hero-section .hero-container .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-section .hero-container .hero-content h3 {
+        font-size: 20px;
+    }
+
+    /* icon  */
+    .hero-section .social_icon a i {
+        font-size: 20px;
+    }
+
+    /* button  */
+    .hero-section .btn-1 {
+        font-size: 15px;
+    }
+
+    /* right side image */
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* about section  */
+    .about{
+        padding: 0 30px;
+    }
+    .about .hading h2 {
+        margin-top: 70px;
+    }
+
+    /* circle  */
+    .about .row .about-img {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .about .row .about-img img {
+        width: 225px;
+        height: 225px;
+    }
+    .about .circle {
+        width: 220px;
+        height: 220px;
+        right: 7px;
+    }
+
+    .padding {
+        padding-left: 0;
+    }
+
+    .about-content {
+        padding: 0 5px;
+    }
+
+    .main_contact {
+        padding: 39px 0;
+    }
+
+    /* my Journey section   */
+    .education .container .hading h2 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    /* education  */
+    .education{
+        padding: 0 10px;
+    }
+    .education .container .row .education_box .education_content .content h3 {
+        font-size: 20px;
+    }
+
+    .education .container .row .education_box .education_content .content h3 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bolder;
+    }
+    /* skills  */
+    .skills{
+        padding: 43px 6px;
+    }
+    /* latest project section */
+    .latast-project {
+        margin: 40px 10px;
+    }
+
+    .latast-project .container .hading h2 {
+        font-size: 25px;
+        padding-top: 26px;
+    }
+
+    .skills .container h2 {
+        padding-top: 4px;
+        font-size: 30px;
+    
+    }
+    /* testomonial section design start   */
+    .testimonial-section .carousel-indicators {
+        bottom: 0;
+    }
+    .testimonial-section .carousel-item .carousel-caption p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+    }
+    /* contact section design start  */
+    .main_contact .container h2 {
+        margin-bottom: 0px;
+    }
+
+    /* contact section  */
+    .contact-start{
+        margin: 0 5px;
+    }
+    
+    /* footer section design start  */
+    .main_footer .container .footer{
+        display: block;
+    }
+    .main_footer .container .footer .box-1{
+        margin-bottom: 30px;
+    }
+    .main_footer .container .footer .box-3{
+        margin-top: 30px;
+    }
+    .navbar-toggler{
+        width: 57px;
+    }
+}
