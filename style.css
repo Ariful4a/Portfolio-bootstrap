@@ -100,15 +100,17 @@ header nav ul li a {
 }
 
 .hero-img img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 10px solid transparent;
     background-image: linear-gradient(90deg, #ff0000, #ff8c00, #ffd700, #32cd32, #1e90ff, #8a2be2); 
     background-clip: border-box;
     -webkit-background-clip: border-box; 
-    box-shadow: 0 0 10px #0ef; 
+    box-shadow: 0 0 30px #0ef; 
     transition: 0.3s; 
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+	animation-delay: 1s, 3s;
 }
 .custom-container {
     max-width: 1000px;
@@ -919,7 +921,31 @@ border-radius: 10px;
     100% { background-position: 100%; }
 }
 
-  
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
 
-  /* Responsive adjustments */
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
  
