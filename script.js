@@ -66,6 +66,27 @@ const showTime = () => {
 setInterval(showTime, 1000);
 
 
+// faq section js code design 
+
+function toggleFaq(header) {
+    const body = header.nextElementSibling;
+    const icon = header.querySelector('.toggle-icon');
+
+    document.querySelectorAll('.faq-card-body').forEach(faqBody => {
+        if (faqBody !== body) {
+            faqBody.style.display = 'none';
+            faqBody.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+        }
+    });
+
+    if (body.style.display === 'block') {
+        body.style.display = 'none';
+        icon.textContent = '+';
+    } else {
+        body.style.display = 'block';
+        icon.textContent = '-';
+    }
+};
 
 
 
