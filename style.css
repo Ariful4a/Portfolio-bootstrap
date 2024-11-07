@@ -573,6 +573,40 @@ header nav ul li a {
     margin: 40px 0;
 }
 
+.latast-project .item-1{
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.latast-project .item-1 .content h3{
+    background: linear-gradient(90deg, #ff0000, #ff8c00, #ffd700, #32cd32, #1e90ff, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+.latast-project .item-1 .content p{
+    font-weight: 900;
+}
+.latast-project .item-1 .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	background-color: #00000096;
+	padding-top: 80px;
+    opacity: 0;
+}
+
+.latast-project .item-1:hover .content {
+    opacity: 1;
+ 
+}
+
 .latast-project .container .hading h2 {
     font-size: 40px;
     padding-top: 60px;
@@ -910,7 +944,6 @@ footer .bottom_footer p{
 
 .dispaly_icon .icon{
     position: fixed;
-    top: 50%;
     right: 0;
     bottom: 5px;
     z-index: 1;
