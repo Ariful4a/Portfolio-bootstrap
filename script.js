@@ -1,5 +1,5 @@
 var type = new Typed(".multiple_text", {
-  strings: ["Frontend Developer", "Web Designer", "Wordpress Developer"],
+  strings: ["Frontend Web Developer", "Web Designer", "Wordpress Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   typeDaly: 1000,
@@ -10,6 +10,27 @@ window.onscroll = () => {
   let header = document.querySelector("header");
 
   header.classList.toggle("ariful", window.scrollY > 100);
+};
+
+// scrol changes background color
+window.onscroll = () => {
+    let header = document.querySelector('header');
+    header.classList.toggle('ariful', scrollY > 100);
+ }
+
+ // Toggle menu function
+function toggleMenu() {
+    const navbarNav = document.getElementById("navbarNav");
+    const menuIcon = document.getElementById("menu-icon");
+    
+    navbarNav.classList.toggle("show");
+    if (navbarNav.classList.contains("show")) {
+        menuIcon.classList.remove("navbar-toggler-icon");
+        menuIcon.innerHTML = "&times;"; // Cross icon
+    } else {
+        menuIcon.classList.add("navbar-toggler-icon");
+        menuIcon.innerHTML = ""; // Back to hamburger icon
+    }
 };
 
 // live time
@@ -46,17 +67,8 @@ setInterval(showTime, 1000);
 
 
 
-// Toggle menu function
-function toggleMenu() {
-    const navbarNav = document.getElementById("navbarNav");
-    const menuIcon = document.getElementById("menu-icon");
-    
-    navbarNav.classList.toggle("show");
-    if (navbarNav.classList.contains("show")) {
-        menuIcon.classList.remove("navbar-toggler-icon");
-        menuIcon.innerHTML = "&times;"; // Cross icon
-    } else {
-        menuIcon.classList.add("navbar-toggler-icon");
-        menuIcon.innerHTML = ""; // Back to hamburger icon
-    }
-}
+
+
+// wow js 
+
+new WOW().init(); 

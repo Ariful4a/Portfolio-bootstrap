@@ -28,30 +28,37 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- wow.js link  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.3/wow.min.js"></script> -->
+
+      <!-- animate.css CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+      <!-- Wow.js JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- custom css link  -->
     <link rel="stylesheet" href="style.css" />
     <!-- responsive css link  -->
     <link rel="stylesheet" href="responsive.css" />
+
   </head>
   <body>
     <!-- This is my Header section  -->
-    <header class="bg-dark text-light">
+    <header class="text-light">
 <!-- Navbar Header -->
 <div class="container">
   <nav class="navbar navbar-expand-lg text-light navbar-light">
-    <a class="navbar-brand" href="#"><img src="assets/LOGO.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="assets/LOGO.png" class="wow animate__fadeInLeft" data-wow-duration="1s" alt=""></a>
     <button class="navbar-toggler" type="button" onclick="toggleMenu()">
         <span id="menu-icon" class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
+          <li class="nav-item">
+            <a class="animate__animated animate__fadeInDown nav-link text-light" href="#home">Home</a>
+        </li>        
+            <li class="nav-item"><a class="animate__animated animate__fadeInDown nav-link text-light" href="#about">About</a></li>
+            <li class="nav-item"><a class="animate__animated animate__fadeInDown nav-link text-light" href="#latast-project">Latast-project</a></li>
+            <li class="nav-item"><a class="animate__animated animate__fadeInDown nav-link text-light" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="animate__animated animate__fadeInDown nav-link text-light" href="#contact">Contact</a></li>
         </ul>
     </div>
   </nav>
@@ -68,15 +75,15 @@
               <div class="row align-items-center custom-height">
                 <div class="col-12 col-lg-7">
                   <div class="hero-content">
-                    <h3>Hello, My name is</h3>
-                    <h1>Md.Ariful islam</h1>
-                    <h3>And I'm a <span class="multiple_text"></span></h3>
-                    <p>
+                    <h3 class="animate__animated animate__fadeInDown">Hello, My name is</h3>
+                    <h1 class="animate__animated animate__bounce">Md.Ariful islam</h1>
+                    <h3 class="animate__animated animate__backInRight">And I'm a <span class="multiple_text"></span></h3>
+                    <p class="animate__animated  animate__fadeInTopLeft">
                       I'm a web Designer extensive experience for over 1 years. My
                       expertise is to create and website design, Frontend design,
                       and many more....
                     </p>
-                    <div class="social_icon">
+                    <div class="animate__animated animate__jackInTheBox social_icon">
                       <a
                         href="https://www.facebook.com/mdariful.islam.9m?mibextid=ZbWKwL"
                         target="_blank"
@@ -115,7 +122,7 @@
                   <div class="hero-img">
                     <img
                       src="assets/Images/Ariful.jpg"
-                      class="img-fluid"
+                      class="animate__animated animate__zoomIn img-fluid"
                       alt=""
                     />
                   </div>
@@ -128,7 +135,7 @@
       <!-- About me section  -->
       <section class="about" id="about">
         <div class="hading">
-          <h2>ABOUT <span style="color: aliceblue">Me</span></h2>
+          <h2 class="animate__animated animate__lightSpeedInLeft">ABOUT <span style="color: aliceblue">Me</span></h2>
         </div>
         <div class="custom-container">
           <div class="row ps-6 align-items-center">
@@ -138,16 +145,13 @@
                 <span class="circle"></span>
               </div>
             </div>
-            <div class="col-12 col-lg-7 padding">
+            <div class="col-12 col-lg-7">
             <div class="about-content">
               <h3>LET ME INTRODUCE MYSELF</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita repellat earum voluptatibus sed rerum molestias harum
-                sequi. Assumenda, ipsa sed. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Expedita repellat earum
-                voluptatibus sed rerum molestias harum sequi. Assumenda, ipsa
-                sed.
+                Hello! My name is [Your Name], and I am a passionate and dedicated web developer. With a strong foundation in frontend technologies like HTML, CSS, and JavaScript, I specialize in creating responsive, user-friendly websites and applications. My goal is to build seamless digital experiences that combine aesthetics with functionality. I am constantly learning and improving my skills to stay updated with the latest trends and best practices in web development.
+
+Whether working independently or as part of a team, I strive to deliver high-quality, efficient, and innovative solutions for my clients. I’m excited to take on new challenges and bring ideas to life in the digital world.
               </p>
               <a href="#" class="btn-2 button-gradient">Read More</a>
             </div>
@@ -175,8 +179,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>2019-2020</div>
                                   <h3>Shibpur Govt. Model high School</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <p><strong>Graduation Year : </strong>2020</p>
+                                  <p><strong>GPA : </strong>4.79</p>
                               </div>
                           </div>
                       </div>
@@ -185,8 +189,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>2020-2024</div>
                                   <h3>Habiganj Polytechnic Institute</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <p><strong>Graduation Year : </strong>2024</p>
+                                  <p><strong>CGPA : </strong>Coming</p>
                               </div>
                           </div>
                       </div>
@@ -195,8 +199,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>6 Month</div>
                                   <h3>European IT Solutions Institute</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <p><strong>Name of Organization : </strong> European IT Solutions </p>
+                                  <p><strong>Duration : </strong>6 Month</p>
                               </div>
                           </div>
                       </div>
@@ -213,8 +217,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>1 Year+ Experience</div>
                                   <h3>European IT - Company</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <li><p><strong>Working with the wider development team</strong></p></li>
+                                  <li><p><strong>Manage website design, Wordpress Theme</strong></p></li>
                               </div>
                           </div>
                       </div>
@@ -223,8 +227,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>1 Year+ Experience</div>
                                   <h3>European IT - Company</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <li><p><strong>Working with the wider development team</strong></p></li>
+                                  <li><p><strong>Manage website design, Wordpress Theme</strong></p></li>
                               </div>
                           </div>
                       </div>
@@ -233,8 +237,8 @@
                               <div class="content">
                                   <div class="year"><i class='bx bxs-calendar'></i>1 Year+ Experience</div>
                                   <h3>European IT - Company</h3>
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quae illum neque
-                                      ipsum, quaerat totam illo. Eligendi facilis doloremque at!</p>
+                                  <li><p><strong>Working with the wider development team</strong></p></li>
+                                  <li><p><strong>Manage website design, Wordpress Theme</strong></p></li>
                               </div>
                           </div>
                       </div>
@@ -419,7 +423,7 @@
               <div class="footer">
                   <div class="box-1">
                       <div class="img">
-                          <img src="#" alt="Comeing sonn...">
+                          <img src="assets/LOGO.png" alt="Comeing sonn...">
                       </div>
                       <div class="content">
                           <h2>Md.Ariful Islam</h2>
@@ -431,15 +435,16 @@
                       <div class="links">
                       <li> <a href="https://ariful4a.github.io/Majistic_project-1/" target="_blank">Majistic</a></li>
                       <li><a href="https://ariful4a.github.io/Green_line/" target="_blank">Green line</a></li>
-                      <li><a href="#">Majistic</a></li>
-                      <li><a href="#">Majistic</a></li>
+                      <li><a target="_blank" href="https://ariful4a.github.io/Careerr-project/">Careear project</a></li>
+                      <li><a target="_blank" href="https://ariful4a.github.io/restorent/">Restorant website</a></li>
+                      <li><a target="_blank" href="https://ariful4a.github.io/Assignment-3/">Rinterio</a></li>
                   </div>
                  
               </div>
               <div class="box-3">
                   <h2>My Infomation</h2>
                   <div class="content">
-                      <p><strong>Address :</strong> Dhaka , Mirpur- 10</p>
+                      <p><strong>Address :</strong> Dhaka , Mirpur- 13</p>
                       <p><strong>Email :</strong> <a href="mailto:arifuldeveloper70@gmail.com"> arifuldeveloper70@gmail.com</a></p>
                       <p><strong>Mobile :</strong> <a href="tel:01893210449"> 01893210449</a></p>
                   </div>
@@ -462,9 +467,7 @@
       </div>
   </footer>
     <!-- This footer section end ****************** -->
-
-
-
+     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <!-- bootstrap js link -->
