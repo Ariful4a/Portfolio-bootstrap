@@ -96,38 +96,6 @@ function toggleFaq(header) {
 
 new WOW().init(); 
 
-
-
-
-
-// document.addEventListener('scroll', function () {
-//   const sections = document.querySelectorAll('.section');
-
-//   sections.forEach((section) => {
-//     const rect = section.getBoundingClientRect();
-//     const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-
-//     // Check if section is visible
-//     if (isVisible) {
-//       if (section.classList.contains('right')) {
-//         // Right animation
-//         section.classList.add('animate__animated', 'animate__fadeInRight');
-//       } else if (section.classList.contains('left')) {
-//         // Left animation
-//         section.classList.add('animate__animated', 'animate__fadeInLeft');
-//       }
-//     } else {
-//       // Remove animation classes when out of view (optional)
-//       section.classList.remove(
-//         'animate__animated',
-//         'animate__fadeInRight',
-//         'animate__fadeInLeft'
-//       );
-//     }
-//   });
-// });
-
-
 document.addEventListener('scroll', function () {
   const sections = document.querySelectorAll('.section');
 
