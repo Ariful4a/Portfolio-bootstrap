@@ -40,17 +40,16 @@ a {
   margin: 0;
 }
 /* custom scrollbar  */
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 2px;
-    height: 8px;
+    height: 4px;
 }
 ::-webkit-scrollbar-track{
     background-color: var(--red-color);
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--red-color);
-}
-
+} 
 
 /* Header section design start ********************* */
 header {
