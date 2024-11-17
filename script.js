@@ -69,27 +69,31 @@ setInterval(showTime, 1000);
 // faq section js code design 
 
 function toggleFaq(header) {
-    const body = header.nextElementSibling;
-    const icon = header.querySelector('.toggle-icon');
+  const body = header.nextElementSibling;
+  const icon = header.querySelector('.toggle-icon');
 
-    document.querySelectorAll('.faq-card-body').forEach(faqBody => {
-        if (faqBody !== body) {
-            faqBody.style.display = 'none';
-            faqBody.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
-        }
-    });
+  // Close other FAQs
+  document.querySelectorAll('.faq-card-body').forEach(faqBody => {
+      if (faqBody !== body) {
+          faqBody.classList.remove('open');
+          faqBody.previousElementSibling.querySelector('.toggle-icon').classList.remove('open');
+      }
+  });
 
-    if (body.style.display === 'block') {
-        body.style.display = 'none';
-        icon.textContent = '+';
-    } else {
-        body.style.display = 'block';
-        icon.textContent = '-';
-    }
-};
-
+  // Toggle current FAQ
+  if (body.classList.contains('open')) {
+      body.classList.remove('open');
+      icon.classList.remove('open');
+  } else {
+      body.classList.add('open');
+      icon.classList.add('open');
+  }
+}
 
 
 // wow js 
 
 new WOW().init(); 
+
+
+

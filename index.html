@@ -471,29 +471,65 @@ Whether working independently or as part of a team, I strive to deliver high-qua
       <!-- faq end  -->
            <!-- CONTACT SECTION START  -->
 
-    <section class="main_contact" id="contact">
-      <div class="container">
-          <h2 class="text-center fs-1">Contact <span style="color: aliceblue;">Me</span></h2>
-          <div class="contact-start">
-              <form>
-                  <div class="inputbox">
-                      <ion-icon name="mail-outline"></ion-icon>
-                      <input type="text" required>
-                      <label for="">Name</label>
-                  </div>
-                  <div class="inputbox">
-                      <ion-icon name="lock-closed-outline"></ion-icon>
-                      <input type="email" required>
-                      <label for="email">Email</label>
-                  </div>
-                  <div class="textbox">
-                    <textarea name="masage" id="masage" placeholder="Type Your Message"></textarea>
-                 </div>
-                  <button type="submit">Submit</button>
-              </form>
-          </div>
-      </div>
-  </section>
+           <section class="main_contact bg-dark text-light py-5" id="contact">
+            <div class="container">
+                <h2 class="text-center fs-1 mb-4">Contact <span class="text-primary">Me</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form class="p-4 bg-secondary rounded shadow">
+                            <!-- Name Field -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-primary text-white">
+                                        <i class="bi bi-person"></i>
+                                    </span>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        class="form-control" 
+                                        placeholder="Enter your name" 
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <!-- Email Field -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-primary text-white">
+                                        <i class="bi bi-envelope"></i>
+                                    </span>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        class="form-control" 
+                                        placeholder="Enter your email" 
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <!-- Message Field -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    class="form-control" 
+                                    rows="4" 
+                                    placeholder="Type your message" 
+                                    required>
+                                </textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <!-- This main section end ****************** -->
     <!-- This is footer section start ****************** -->

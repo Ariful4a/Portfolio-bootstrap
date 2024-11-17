@@ -700,12 +700,13 @@ margin-bottom: 20px;
     opacity: 1;
 }
 
-/* faq section design */
+/* FAQ Section Design */
 .faq-container {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.faq-container h2{ 
+
+.faq-container h2 {
     margin-top: 50px;
     font-size: 40px;
     font-weight: bold;
@@ -715,11 +716,13 @@ margin-bottom: 20px;
     color: transparent;
     animation: gradientAnimation 5s ease infinite;
 }
+
 .faq-card {
     border: 1px solid #ddd;
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
 .faq-card-header {
     background-color: #007bff;
     color: white;
@@ -729,15 +732,30 @@ margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
 }
+
 .faq-card-body {
-    display: none;
-    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
     background-color: #f9f9f9;
     color: var(--black-color);
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
+
+.faq-card-body.open {
+    max-height: 200px; /* Approximate height for open state */
+    padding: 15px;
+}
+
 .toggle-icon {
     font-size: 20px;
+    transition: transform 0.3s ease;
 }
+
+.toggle-icon.open {
+    transform: rotate(45deg);
+}
+
 
 /* contact section design start  */
 .main_contact {
